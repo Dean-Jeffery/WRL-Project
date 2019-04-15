@@ -50,14 +50,12 @@ table {
 }
 
 /* END OF CSS RESET */
-/* LOGIN FORM STYLE */
-#body_bg {
-  background-color: #9F81F7;
-}
 
-#login-form {
+/* LOGIN FORM STYLE */
+
+.login-form {
   background: #A9D0F5;
-  border: 3 px solid #eeeee;
+  border: 3px solid #eeeee;
   padding: 9px 9px;
   width: 300px;
   border-radius: 5px;

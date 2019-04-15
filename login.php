@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Login | Asset Tracking System</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="body_bg">
 <div <div align="center">
 
 <h3>Login</h3>
-    <form id="login-form" method="post" action="authen_login.php" >
+    <form class="login-form" method="post" action="authen_login.php">
         <table border="0.5" >
             <tr>
                 <td><label for="user_email">Email</label></td>

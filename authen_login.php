@@ -10,7 +10,7 @@ $password = $_POST['user_password'];
 // CHECK FOR THE RECORD FROM TABLE
 $query = "SELECT * FROM `tblStaff` WHERE email='$email' and password='$password'";
 
-$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+$result = mysqli_query($db, $query) or die(mysqli_error($db));
 $count = mysqli_num_rows($result);
 
 if ($count == 1){
