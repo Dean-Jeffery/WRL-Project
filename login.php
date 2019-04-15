@@ -1,26 +1,32 @@
-<?php
+<!DOCTYPE html >
+<html>
+<head>
+<title>Login | Asset Tracking System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body_bg">
+<div <div align="center">
 
-// include database connection file
-include_once('inc/connection.inc.php');
+<h3>Login</h3>
+    <form id="login-form" method="post" action="authen_login.php" >
+        <table border="0.5" >
+            <tr>
+                <td><label for="user_email">Email</label></td>
+                <td><input type="text" name="user_email" id="user_email"></td>
+            </tr>
+            <tr>
+                <td><label for="user_password">Password</label></td>
+                <td><input type="password" name="user_password" id="user_password"></input></td>
+            </tr>
 
-// check to see if the form has been submitted
-if (isset($_POST['submit']))
-{
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+            <tr>
 
-	$query = "SELECT userame, password FROM customers WHERE userName = '$username' AND password = '$password'";
-	$result = $db -> query ($query);
+                <td><input type="submit" value="Submit" />
+                <td><input type="reset" value="Reset"/>
 
-	if ($result -> num_rows >0)
-	{
-		echo "logged in";
-	}
-
-	else
-	{
-		echo "Username or password is Incorrect";
-	}
-}
-
-?>
+            </tr>
+        </table>
+    </form>
+		</div>
+</body>
+</html>
