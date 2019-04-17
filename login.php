@@ -18,12 +18,9 @@
                 <td><label for="user_password">Password</label></td>
                 <td><input type="password" name="user_password" id="user_password"></input></td>
             </tr>
-
             <tr>
-
                 <td><input type="submit" value="Submit" />
                 <td><input type="reset" value="Reset"/>
-
             </tr>
         </table>
     </form>
